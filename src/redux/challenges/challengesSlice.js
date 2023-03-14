@@ -6,10 +6,11 @@ const url = 'https://kontests.net/api/v1/';
 const initialState = {
   sites: [],
   challenges: [],
+  status: '',
 };
 
 export const fetchSites = createAsyncThunk('challenges/fetchSites', async () => {
-  const res = await axios.get(`${url}sites`);
+  const res = await axios.get(`${url}all`);
   return res.data;
 });
 
@@ -18,7 +19,13 @@ const challengesSlice = createSlice({
   initialState,
   reducers: {},
   extraReducers(builder) {
-    builder.addCase(fetchSites.fulfilled, (state, action) => ({ ...state, sites: action.payload }));
+    builder
+      .addCase(fetchSites.pending, (state) => ({ ...state, status: 'loading' }))
+      .addCase(fetchSites.fulfilled, (state, action) => ({
+        ...state,
+        sites: action.payload,
+        status: 'completed',
+      }));
   },
 });
 
