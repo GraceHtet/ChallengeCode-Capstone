@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Upcomings from './component/Upcomings';
-import Challenge from './component/Challenge';
+import Upcomings from './pages/upcoming/Upcomings';
+import Challenge from './pages/challenge/Challenge';
 
 function App() {
   return (

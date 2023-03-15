@@ -49,7 +49,7 @@ const Img = ({ siteName }) => {
       link = pageImg;
       break;
   }
-  return <img src={link} alt={siteName} width="50px" />;
+  return <img src={link} alt={siteName} width="100%" height="50px" />;
 };
 
 Img.propTypes = {

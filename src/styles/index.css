@@ -20,11 +20,15 @@ body {
 }
 
 .container {
-  background: radial-gradient(50% 50% at 50% 50%, rgba(251, 251, 251, 0.85) 0%, #ffecb9 100%);
+  background: radial-gradient(50% 50% at 50% 50%, rgba(251, 251, 251, 0.85) 0%, #f7f3e7 100%);
   width: 360px;
-  border: 1px solid #ffd67e;
+  border: 2px solid #000;
 }
 
 h1 {
   font-family: var(--primary-font);
+}
+
+a {
+  text-decoration: none;
 }

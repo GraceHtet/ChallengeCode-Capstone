@@ -1,9 +1,9 @@
 import { useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { fetchChallenges } from '../redux/challenges/challengesSlice';
-import Img from './Img';
-import Navbar from './Navbar';
+import { fetchChallenges } from '../../redux/challenges/challengesSlice';
+import Img from '../../component/Img';
+import Navbar from '../../component/Navbar';
 
 const Challenge = () => {
   const { name } = useParams();

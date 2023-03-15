@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-import Card from './Card';
-import { fetchSites } from '../redux/challenges/challengesSlice';
-import styles from '../styles/Challenges.module.css';
-import pageImg from '../assets/img/pageImg.svg';
-import Img from './Img';
-import Navbar from './Navbar';
+import Card from '../../component/Card';
+import { fetchSites } from '../../redux/challenges/challengesSlice';
+import styles from './Challenges.module.css';
+import pageImg from '../../assets/img/pageImg.svg';
+import Img from '../../component/Img';
+import Navbar from '../../component/Navbar';
 
 const Upcomings = () => {
   const { sites } = useSelector((state) => state.challenges);
@@ -58,16 +58,20 @@ const Upcomings = () => {
   return (
     <main>
       <Navbar title="Upcoming" />
-      <div className={styles.title}>
+      <div className={styles.container}>
         <img src={pageImg} className={styles.img} alt="pageImg" />
-        <h1>Upcoming Challenges</h1>
+        <h1 className={styles.h1}>Upcoming Challenges</h1>
       </div>
       {siteStatus === 'loading' && <h2>Please, wait for a while</h2>}
-      <div>
+      <div className={styles.containertwo}>
         {upFilters.map((site) => (
-          <Link key={crypto.randomUUID()} to={`/${site.detail[0].linkName}`}>
+          <Link
+            key={crypto.randomUUID()}
+            className={styles.link}
+            to={`/${site.detail[0].linkName}`}
+          >
             <Img siteName={site.detail[0].linkName} />
-            <Card name={site.name} />
+            <Card name={site.name} total={site.detail.length} />
           </Link>
         ))}
       </div>

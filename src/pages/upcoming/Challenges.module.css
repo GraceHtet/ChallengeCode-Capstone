@@ -1,0 +1,32 @@
+.container,
+.containertwo {
+  display: grid;
+  grid-template-columns: 47% 47%;
+  padding: 4%;
+}
+
+.containertwo {
+  padding: 0;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.link {
+  color: #000;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #343212;
+  padding: 4%;
+}
+
+.link:hover {
+  background: rgba(209, 197, 157, 0.473);
+}
+
+.img {
+  display: flex;
+  align-self: center;
+}
+
+.h1 {
+  text-align: right;
+}
