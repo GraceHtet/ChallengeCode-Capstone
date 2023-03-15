@@ -1,0 +1,13 @@
+.nav {
+  background: rgba(194, 185, 152, 0.63);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 2%;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}

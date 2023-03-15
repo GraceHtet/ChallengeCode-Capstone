@@ -1,13 +1,12 @@
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchChallenges } from '../redux/challenges/challengesSlice';
-import bArrow from '../assets/img/backArrow.svg';
 import Img from './Img';
+import Navbar from './Navbar';
 
 const Challenge = () => {
   const { name } = useParams();
-  const navigate = useNavigate();
   const { challenges } = useSelector((state) => state.challenges);
   const dispatch = useDispatch();
 
@@ -23,17 +22,9 @@ const Challenge = () => {
     return cMonth > curMonth && cyear >= curYear;
   });
 
-  const styles = {
-    background: 'none',
-    border: 'none',
-    cursor: 'pointer',
-  };
-
   return (
     <>
-      <button type="button" style={styles} onClick={() => navigate(-1)}>
-        <img src={bArrow} width="30px" alt="backArrow" />
-      </button>
+      <Navbar back title="Upcoming/Challenges" />
 
       <h2>{name.toUpperCase().replace('_', ' ')}</h2>
       <Img siteName={name} />

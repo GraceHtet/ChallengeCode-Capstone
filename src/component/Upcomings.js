@@ -6,6 +6,7 @@ import { fetchSites } from '../redux/challenges/challengesSlice';
 import styles from '../styles/Challenges.module.css';
 import pageImg from '../assets/img/pageImg.svg';
 import Img from './Img';
+import Navbar from './Navbar';
 
 const Upcomings = () => {
   const { sites } = useSelector((state) => state.challenges);
@@ -56,6 +57,7 @@ const Upcomings = () => {
 
   return (
     <main>
+      <Navbar title="Upcoming" />
       <div className={styles.title}>
         <img src={pageImg} className={styles.img} alt="pageImg" />
         <h1>Upcoming Challenges</h1>
