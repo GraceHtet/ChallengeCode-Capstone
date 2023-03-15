@@ -8,7 +8,6 @@
 }
 
 body {
-  background: radial-gradient(50% 50% at 50% 50%, rgba(251, 251, 251, 0.85) 0%, #dbd9d0 100%);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -16,6 +15,14 @@ body {
   font-family: var(--primary-font);
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(251, 251, 251, 0.85) 0%, #ffecb9 100%);
+  width: 360px;
+  border: 1px solid #ffd67e;
 }
 
 h1 {

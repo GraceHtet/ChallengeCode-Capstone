@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Challenges from './component/Challenges';
+import Upcomings from './component/Upcomings';
 import Challenge from './component/Challenge';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/">
-            <Route index element={<Challenges />} />
+            <Route index element={<Upcomings />} />
             <Route path=":name" element={<Challenge />} />
           </Route>
         </Routes>
