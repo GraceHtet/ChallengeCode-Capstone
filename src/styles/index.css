@@ -23,6 +23,29 @@ body {
   background: radial-gradient(50% 50% at 50% 50%, rgba(251, 251, 251, 0.85) 0%, #f7f3e7 100%);
   width: 360px;
   border: 2px solid #000;
+  overflow-y: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: linear-gradient(#e3dcca6b, #e3dcca6f);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: radial-gradient(#cfc694, transparent);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: radial-gradient(transparent, #f3ab3e);
 }
 
 h1 {

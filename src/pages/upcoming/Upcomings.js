@@ -70,7 +70,7 @@ const Upcomings = () => {
             className={styles.link}
             to={`/${site.detail[0].linkName}`}
           >
-            <Img siteName={site.detail[0].linkName} />
+            <Img siteName={site.detail[0].linkName} width="100%" height="50px" />
             <Card name={site.name} total={site.detail.length} />
           </Link>
         ))}

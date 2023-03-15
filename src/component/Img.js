@@ -11,7 +11,7 @@ import hackerearth from '../assets/img/hackerearth.png';
 import leetcode from '../assets/img/leetcode.png';
 import topcoder from '../assets/img/top.svg';
 
-const Img = ({ siteName }) => {
+const Img = ({ siteName, width, height }) => {
   let link;
 
   switch (siteName) {
@@ -49,11 +49,13 @@ const Img = ({ siteName }) => {
       link = pageImg;
       break;
   }
-  return <img src={link} alt={siteName} width="100%" height="50px" />;
+  return <img src={link} alt={siteName} width={width} height={height} />;
 };
 
 Img.propTypes = {
   siteName: PropTypes.string.isRequired,
+  width: PropTypes.string.isRequired,
+  height: PropTypes.string.isRequired,
 };
 
 export default Img;
