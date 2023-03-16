@@ -1,14 +1,14 @@
 import { useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { fetchChallenges } from '../../redux/challenges/challengesSlice';
+import { fetchChallenges } from '../../redux/challenge/challengeSlice';
 import Img from '../../component/Img';
 import Navbar from '../../component/Navbar';
 import styles from './Challenge.module.css';
 
 const Challenge = () => {
   const { name } = useParams();
-  const { challenges } = useSelector((state) => state.challenges);
+  const { challenges } = useSelector((state) => state.challenge);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -22,14 +22,18 @@ const Challenge = () => {
     const curYear = new Date().getFullYear();
     return cMonth > curMonth && cyear >= curYear;
   });
+  // console.log(name, typeof name);
+  // const title = name.toUpperCase().replace('_', ' ');
+  let title;
+  if (typeof name === 'string') title = name.toUpperCase().replace('_', ' ');
 
   return (
     <>
       <Navbar back title="Upcoming/Challenges" />
 
       <div className={styles.container}>
-        <Img siteName={name} width="90%" height="70px" />
-        <h2 className={styles.h2}>{name.toUpperCase().replace('_', ' ')}</h2>
+        <Img siteName={typeof name === 'string' ? name : ''} width="90%" height="70px" />
+        <h2 className={styles.h2}>{title}</h2>
       </div>
       {upcomings.map((each) => (
         <div key={crypto.randomUUID()} className={styles.div}>

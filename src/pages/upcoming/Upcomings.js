@@ -63,15 +63,15 @@ const Upcomings = () => {
         <h1 className={styles.h1}>Upcoming Challenges</h1>
       </div>
       {siteStatus === 'loading' && <h2>Please, wait for a while</h2>}
-      <div className={styles.containertwo}>
-        {upFilters.map((site) => (
+      <div className={styles.containertwo} data-testid="some">
+        {upFilters.map((site, idx) => (
           <Link
             key={crypto.randomUUID()}
             className={styles.link}
             to={`/${site.detail[0].linkName}`}
           >
             <Img siteName={site.detail[0].linkName} width="100%" height="50px" />
-            <Card name={site.name} total={site.detail.length} />
+            <Card name={site.name} total={site.detail.length} data-testid={idx} />
           </Link>
         ))}
       </div>
