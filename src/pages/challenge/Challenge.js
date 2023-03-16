@@ -39,11 +39,11 @@ const Challenge = () => {
             hr
           </p>
           <p>
-            Start -{new Date(each.startTime).getFullYear()}/{new Date(each.startTime).getMonth()}/
-            {new Date(each.startTime).getDate()}
+            Start -{new Date(each.startTime).getFullYear()}/
+            {new Date(each.startTime).getMonth() + 1}/{new Date(each.startTime).getDate()}
           </p>
           <p>
-            End -{new Date(each.endTime).getFullYear()}/{new Date(each.endTime).getMonth()}/
+            End -{new Date(each.endTime).getFullYear()}/{new Date(each.endTime).getMonth() + 1}/
             {new Date(each.endTime).getDate()}
           </p>
           <a href={each.url} className={styles.a}>
@@ -63,7 +63,7 @@ const Challenge = () => {
                 <path
                   d="M4 12L20 12L14.0001 18M17 9L14 6"
                   stroke="#000000"
-                  stroke-width="2.088"
+                  strokeWidth="2.088"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />{' '}
