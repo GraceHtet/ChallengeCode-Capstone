@@ -29,6 +29,7 @@
 
 .a:hover {
   color: rgba(110, 128, 36, 0.914);
+  font-size: 18px;
   font-weight: bolder;
 }
 

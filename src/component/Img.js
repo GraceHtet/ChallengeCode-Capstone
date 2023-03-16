@@ -2,13 +2,13 @@ import React from 'react';
 import { PropTypes } from 'prop-types';
 import pageImg from '../assets/img/pageImg.svg';
 import atcoder from '../assets/img/atcoder.svg';
-import codechef from '../assets/img/codechef.png';
-import codeforces from '../assets/img/codeforces.png';
+import codechef from '../assets/img/codechef.svg';
+import codeforces from '../assets/img/code-forces.svg';
 import csacademy from '../assets/img/csacademy.png';
 import google from '../assets/img/google.svg';
 import hackerrank from '../assets/img/hackerrank.svg';
-import hackerearth from '../assets/img/hackerearth.png';
-import leetcode from '../assets/img/leetcode.png';
+import hackerearth from '../assets/img/hackerearth.svg';
+import leetcode from '../assets/img/leetcode.svg';
 import topcoder from '../assets/img/top.svg';
 
 const Img = ({ siteName, width, height }) => {
