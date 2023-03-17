@@ -21,6 +21,12 @@
   margin-top: 0;
 }
 
+.info,
+.a {
+  display: flex;
+  justify-content: space-between;
+}
+
 .a {
   color: #000;
   font-style: italic;

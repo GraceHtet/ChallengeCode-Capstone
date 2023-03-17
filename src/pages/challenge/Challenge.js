@@ -38,29 +38,29 @@ const Challenge = () => {
       {upcomings.map((each) => (
         <div key={crypto.randomUUID()} className={styles.div}>
           <p className={styles.title}>{each.name}</p>
-          <p>
-            duration -
-            {each.duration}
-            hr
+          <p className={styles.info}>
+            <span>duration :</span>
+            <span>
+              {each.duration}
+              hr
+            </span>
           </p>
-          <p>
-            Start -
-            {new Date(each.startTime).getFullYear()}
-            /
-            {new Date(each.startTime).getMonth() + 1}
-            /
-            {new Date(each.startTime).getDate()}
+          <p className={styles.info}>
+            <span>Start :</span>
+            <span>
+              {new Date(each.startTime).getFullYear()}/{new Date(each.startTime).getMonth() + 1}/
+              {new Date(each.startTime).getDate()}
+            </span>
           </p>
-          <p>
-            End -
-            {new Date(each.endTime).getFullYear()}
-            /
-            {new Date(each.endTime).getMonth() + 1}
-            /
-            {new Date(each.endTime).getDate()}
+          <p className={styles.info}>
+            <span>End :</span>
+            <span>
+              {new Date(each.endTime).getFullYear()}/{new Date(each.endTime).getMonth() + 1}/
+              {new Date(each.endTime).getDate()}
+            </span>
           </p>
           <a href={each.url} className={styles.a}>
-            Go to Challenge
+            <span>Go to Challenge</span>
             <svg
               width="16px"
               height="16px"
@@ -79,8 +79,7 @@ const Challenge = () => {
                   strokeWidth="2.088"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                />
-                {' '}
+                />{' '}
               </g>
             </svg>
           </a>
