@@ -48,14 +48,20 @@ const Challenge = () => {
           <p className={styles.info}>
             <span>Start :</span>
             <span>
-              {new Date(each.startTime).getFullYear()}/{new Date(each.startTime).getMonth() + 1}/
+              {new Date(each.startTime).getFullYear()}
+              /
+              {new Date(each.startTime).getMonth() + 1}
+              /
               {new Date(each.startTime).getDate()}
             </span>
           </p>
           <p className={styles.info}>
             <span>End :</span>
             <span>
-              {new Date(each.endTime).getFullYear()}/{new Date(each.endTime).getMonth() + 1}/
+              {new Date(each.endTime).getFullYear()}
+              /
+              {new Date(each.endTime).getMonth() + 1}
+              /
               {new Date(each.endTime).getDate()}
             </span>
           </p>
@@ -79,7 +85,8 @@ const Challenge = () => {
                   strokeWidth="2.088"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                />{' '}
+                />
+                {' '}
               </g>
             </svg>
           </a>
