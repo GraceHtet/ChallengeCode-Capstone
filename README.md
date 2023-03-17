@@ -79,10 +79,9 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-- **User can book rockets**
-- **User can cancel rockets**
-- **User can join missions**
-- **User can leave missions**
+- **User can see sites that will hold challenges**
+- **User can see each challenge data by clicking on each site**
+- **User can go and check the challenge by clicking on go to challenge**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
