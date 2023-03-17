@@ -13,7 +13,7 @@ const Challenge = () => {
 
   useEffect(() => {
     if (challenges.siteName !== name) dispatch(fetchChallenges(name));
-  }, [challenges, dispatch]);
+  }, [challenges, name, dispatch]);
 
   const upcomings = challenges.filter((each) => {
     const cMonth = new Date(each.startTime).getMonth();
