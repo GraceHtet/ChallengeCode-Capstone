@@ -26,7 +26,7 @@ After you're finished please remove all the comments and instructions!
 -->
 
 <div align="center">
-  <img src="./src/assets/img/planet-color.png" alt="logo" width="140"  height="auto" />
+  <img src="./src/assets/img/pageImg.svg" alt="logo" width="140"  height="auto" />
   <br/>
 
 </div>
@@ -50,15 +50,18 @@ After you're finished please remove all the comments and instructions!
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Space Travelers' Hub <a name="about-project"></a>
+# 📖 Challenge Code <a name="about-project"></a>
 
-**Space Travelers' Hub** is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
+**Challenge Code** is a web application where you can see upcoming challenges from some sites. You can also go and check to that challenge link.
 
-![gif](./src/assets/img/SpaceTravelerHub.gif)
+![gif](./src/assets/img/ChallengeCode.gif)
+
+[Description video](https://www.loom.com/share/770009a2e41f44d8b0da492f471c8a14)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -87,7 +90,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Under construction
+- [Live Demo 🚀](https://challengecode.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,8 +112,8 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```sh
-  git clone git@github.com:GraceHtet/SpaceTravellerHub.git
-  cd SpaceTravellerHub
+  git clone git@github.com:GraceHtet/ChallengeCode-Capstone.git
+  cd ChallengeCode-Capstone
 ```
 
 ### Install
@@ -148,21 +151,15 @@ To run tests, run the following command:
 - GitHub: [Grace Htet](https://github.com/GraceHtet)
 - LinkedIn: [Grace Htet](https://linkedin.com/in/thirihtethtetaung)
 
-👤 **shasherazi**
-
-- GitHub: [shasherazi](https://github.com/shasherazi)
-- Twitter: [shasherazi](https://twitter.com/shasherazi)
-- LinkedIn: [shasherazi](https://linkedin.com/in/shasherazi)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Link Wikipedia articles to missions**
-- **Link Nasa articles to rockets**
-- **Add more details to rockets and missions**
+- **Add all challeges page**
+- **Add live challenges page**
+- **Add Home where you can access all of three pages**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -181,6 +178,14 @@ Feel free to check the [issues page](../../issues/).
 ## ⭐️ Show your support <a name="support"></a>
 
 If you like this project please give it a ⭐️!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank Microverse and Nelson Sakwa for the template design.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
