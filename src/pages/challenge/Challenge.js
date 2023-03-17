@@ -39,15 +39,24 @@ const Challenge = () => {
         <div key={crypto.randomUUID()} className={styles.div}>
           <p className={styles.title}>{each.name}</p>
           <p>
-            duration -{each.duration}
+            duration -
+            {each.duration}
             hr
           </p>
           <p>
-            Start -{new Date(each.startTime).getFullYear()}/
-            {new Date(each.startTime).getMonth() + 1}/{new Date(each.startTime).getDate()}
+            Start -
+            {new Date(each.startTime).getFullYear()}
+            /
+            {new Date(each.startTime).getMonth() + 1}
+            /
+            {new Date(each.startTime).getDate()}
           </p>
           <p>
-            End -{new Date(each.endTime).getFullYear()}/{new Date(each.endTime).getMonth() + 1}/
+            End -
+            {new Date(each.endTime).getFullYear()}
+            /
+            {new Date(each.endTime).getMonth() + 1}
+            /
             {new Date(each.endTime).getDate()}
           </p>
           <a href={each.url} className={styles.a}>
@@ -70,7 +79,8 @@ const Challenge = () => {
                   strokeWidth="2.088"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                />{' '}
+                />
+                {' '}
               </g>
             </svg>
           </a>

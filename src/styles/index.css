@@ -3,8 +3,30 @@
   src: local('Gill Sans'), url('../assets/font/Gill\ Sans.otf');
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: linear-gradient(#e3dcca6b, #e3dcca6f);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: radial-gradient(#cfc694, transparent);
+}
+
 :root {
   --primary-font: 'Gill Sans', 'sans-serif';
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: radial-gradient(transparent, #f3ab3e);
 }
 
 body {
@@ -24,28 +46,6 @@ body {
   width: 360px;
   border: 2px solid #000;
   overflow-y: scroll;
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  border-radius: 10px;
-  background: linear-gradient(#e3dcca6b, #e3dcca6f);
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background: radial-gradient(#cfc694, transparent);
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: radial-gradient(transparent, #f3ab3e);
 }
 
 h1 {
