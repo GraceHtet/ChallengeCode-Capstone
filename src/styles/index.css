@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Gill Sans';
+  src: local('Gill Sans'), url('../assets/font/Gill\ Sans.otf');
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: linear-gradient(#e3dcca6b, #e3dcca6f);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: radial-gradient(#cfc694, transparent);
+}
+
+:root {
+  --primary-font: 'Gill Sans', 'sans-serif';
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: radial-gradient(transparent, #f3ab3e);
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  font-family: var(--primary-font);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background: linear-gradient(rgba(251, 251, 251, 0.85) 0%, rgba(235, 199, 82, 0.637) 100%);
+  width: 360px;
+  border: 2px solid #000;
+  overflow-y: scroll;
+}
+
+h1 {
+  font-family: var(--primary-font);
+}
+
+a {
+  text-decoration: none;
+}
