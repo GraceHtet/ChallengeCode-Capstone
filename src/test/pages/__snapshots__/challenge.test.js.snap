@@ -16,8 +16,10 @@ Array [
         width="20px"
       />
     </button>
-    <span>
-      Upcoming/Challenges
+    <span
+      className="title"
+    >
+      undefined/Challenges
     </span>
     <svg
       className="svg"
@@ -66,7 +68,7 @@ Array [
     <img
       alt=""
       height="70px"
-      src="pageImg.svg"
+      src="logoS.png"
       width="90%"
     />
     <h2

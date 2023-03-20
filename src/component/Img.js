@@ -1,6 +1,6 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
-import pageImg from '../assets/img/pageImg.svg';
+import logo from '../assets/img/logoS.png';
 import atcoder from '../assets/img/atcoder.svg';
 import codechef from '../assets/img/codechef.svg';
 import codeforces from '../assets/img/code-forces.svg';
@@ -46,7 +46,7 @@ const Img = ({ siteName, width, height }) => {
       link = leetcode;
       break;
     default:
-      link = pageImg;
+      link = logo;
       break;
   }
   return <img src={link} alt={siteName} width={width} height={height} />;

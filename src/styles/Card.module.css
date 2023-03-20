@@ -1,5 +1,29 @@
-.container {
+.elcontainer {
   font-size: 14px;
   text-align: right;
   margin-top: 10%;
+}
+
+.container {
+  height: 10vh;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+  border: 5px rgba(255, 215, 104, 0.771);
+  border-radius: 8px;
+  border-style: groove;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container:hover {
+  font-style: italic;
+}
+
+@media (min-width: 500px) {
+  .elcontainer {
+    font-size: 1.1em;
+  }
 }

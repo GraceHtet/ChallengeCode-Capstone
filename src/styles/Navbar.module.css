@@ -6,8 +6,38 @@
   padding: 2% 2%;
 }
 
+.title {
+  text-transform: capitalize;
+}
+
 .btn {
   background: none;
   border: none;
   cursor: pointer;
+}
+
+@media (min-width: 500px) {
+  .nav {
+    background: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+  }
+
+  .title,
+  .svg {
+    display: none;
+  }
+
+  .btn {
+    border-radius: 50%;
+    padding: 10px;
+    background: rgba(209, 197, 157, 0.473);
+  }
+
+  .home {
+    display: none;
+  }
 }

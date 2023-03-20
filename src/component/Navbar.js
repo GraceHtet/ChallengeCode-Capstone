@@ -14,9 +14,9 @@ const Navbar = ({ back, title }) => {
           <img src={bArrow} width="20px" alt="backArrow" />
         </button>
       ) : (
-        <span>Home</span>
+        <span className={styles.home}>Home</span>
       )}
-      <span>{title}</span>
+      <span className={styles.title}>{title}</span>
       <svg
         fill="#55544e"
         height="20px"
