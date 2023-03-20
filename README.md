@@ -26,7 +26,7 @@ After you're finished please remove all the comments and instructions!
 -->
 
 <div align="center">
-  <img src="./src/assets/img/pageImg.svg" alt="logo" width="140"  height="auto" />
+  <img src="./src/assets/img/logoM.svg" alt="logo" width="140"  height="auto" />
   <br/>
 
 </div>
