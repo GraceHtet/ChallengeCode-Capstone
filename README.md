@@ -59,7 +59,7 @@ After you're finished please remove all the comments and instructions!
 
 **Challenge Code** is a web application where you can see upcoming challenges from some sites. You can also go and check to that challenge link.
 
-![gif](./src/assets/img/ChallengeCode.gif)
+![gif](./src/assets/img/challengeCode.gif)
 
 [Description video](https://www.loom.com/share/770009a2e41f44d8b0da492f471c8a14)
 
