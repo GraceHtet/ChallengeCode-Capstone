@@ -45,6 +45,7 @@
   .container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
   .containertwo {
     grid-template-columns: 31% 31% 31%;
     column-gap: 3%;
