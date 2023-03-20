@@ -18,6 +18,6 @@ describe('Images', () => {
   test('Should have default img if the src is incorrect', () => {
     render(<Img siteName="something" width="80px" height="80px" />);
 
-    expect(screen.getByRole('img')).toHaveAttribute('src', 'pageImg.svg');
+    expect(screen.getByRole('img')).toHaveAttribute('src', 'logoS.png');
   });
 });

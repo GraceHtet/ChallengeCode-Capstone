@@ -26,7 +26,7 @@ After you're finished please remove all the comments and instructions!
 -->
 
 <div align="center">
-  <img src="./src/assets/img/pageImg.svg" alt="logo" width="140"  height="auto" />
+  <img src="./src/assets/img/logoM.svg" alt="logo" width="140"  height="auto" />
   <br/>
 
 </div>
@@ -156,9 +156,7 @@ To run tests, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Add all challeges page**
-- **Add live challenges page**
-- **Add Home where you can access all of three pages**
+- **Upgrade UI/UX**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
